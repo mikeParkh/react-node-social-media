@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "jsx": "react",
+    "baseUrl": "./src",
     "lib": [
       "es6",
       "dom"
