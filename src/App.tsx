@@ -1,8 +1,9 @@
 import React from 'react';
+import { Home } from 'pages';
 
 const App = () => {
   return (
-    <h1>React Node Social Media App</h1>
+    <Home />
   );
 }
 
