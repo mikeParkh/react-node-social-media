@@ -1,8 +1,12 @@
 import React, { FC } from 'react'
+import { Header } from 'components';
 
 const Home: FC = () => {
   return (
-    <div>Home</div>
+    <>
+      <Header />
+      <div>Home</div>
+    </>
   )
 }
 
