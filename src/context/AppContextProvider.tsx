@@ -16,12 +16,13 @@ type AppContextType = {
   asideBar: AsideBarContextType;
 };
 
-type AppContextProviderProps = {
-  children: ReactNode
-}
 
 const asideBarStateDefaultValue: AsideBarStateType = {
   isOpen: false,
+}
+
+type AppContextProviderProps = {
+  children: ReactNode
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
