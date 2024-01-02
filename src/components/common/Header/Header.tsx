@@ -3,6 +3,7 @@ import { Box, AppBar, Toolbar, Badge, IconButton } from '@mui/material';
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import MenuIcon from "@mui/icons-material/Menu";
 import { SearchField, ProfileDropdown } from 'components';
+import { useAppContext } from 'context';
 
 const searchValues = [
   { label: 'Mike Parkhomenko', id: 'searchValues_1' },
@@ -11,6 +12,8 @@ const searchValues = [
 ]
 
 const Header = () => {
+  const { asideBar } = useAppContext();
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -21,6 +24,7 @@ const Header = () => {
             color="inherit"
             aria-label="open drawer"
             sx={{ mr: 2 }}
+            onClick={asideBar.toggleAsideBar}
           >
             <MenuIcon />
           </IconButton>
