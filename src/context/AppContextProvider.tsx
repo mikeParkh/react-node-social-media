@@ -50,7 +50,6 @@ export const AppContextProvider: FC<AppContextProviderProps> = ({ children }) =>
     closeAsideBar: handleAsideBarVisibility(false),
   }
 
-
   const increment = () => {
     setCount(count + 1);
   };
