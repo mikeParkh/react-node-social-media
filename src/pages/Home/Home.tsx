@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
-import { CssBaseline, Container } from '@mui/material';
-import { Header, AsideBar } from 'components'
+import { CssBaseline } from '@mui/material';
+import { BaseLayout } from 'components';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -47,9 +47,7 @@ const Home: FC = () => {
   return (
     <div>
       <CssBaseline />
-      <Header />
-      <AsideBar />
-      <Container maxWidth="sm" sx={{ paddingTop: 2 }}>
+      <BaseLayout>
         <BasicCard />
         <BasicCard />
         <BasicCard />
@@ -57,10 +55,7 @@ const Home: FC = () => {
         <BasicCard />
         <BasicCard />
         <BasicCard />
-      </Container>
-
-      <div className="Footer"></div>
-      Home
+      </BaseLayout>
     </div>
   )
 }
