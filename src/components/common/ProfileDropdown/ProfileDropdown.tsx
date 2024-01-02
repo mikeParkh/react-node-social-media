@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react'
+import React, { FC, useState } from 'react';
 import { IconButton, Menu, MenuItem, } from '@mui/material';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 
