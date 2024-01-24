@@ -1,17 +1,14 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
+import { Outlet } from 'react-router-dom';
 import { Container } from '@mui/material';
 import { Header, AsideBar } from 'components';
 
-type BaseLayoutProps = {
-  children: ReactNode;
-}
-
-const BaseLayout: FC<BaseLayoutProps> = ({ children }) => (
+const BaseLayout: FC = () => (
   <>
     <Header />
     <AsideBar />
-    <Container maxWidth="sm" sx={{ paddingTop: 2, paddingBottom: 4 }}>
-      {children}
+    <Container maxWidth="md" sx={{ paddingTop: 2, paddingBottom: 4 }}>
+      <Outlet />
     </Container>
   </>
 )
