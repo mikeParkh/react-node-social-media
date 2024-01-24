@@ -1,6 +1,4 @@
 import React, { FC } from 'react';
-import { CssBaseline } from '@mui/material';
-import { BaseLayout } from 'components';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -45,18 +43,15 @@ function BasicCard() {
 
 const Home: FC = () => {
   return (
-    <div>
-      <CssBaseline />
-      <BaseLayout>
-        <BasicCard />
-        <BasicCard />
-        <BasicCard />
-        <BasicCard />
-        <BasicCard />
-        <BasicCard />
-        <BasicCard />
-      </BaseLayout>
-    </div>
+    <>
+      <BasicCard />
+      <BasicCard />
+      <BasicCard />
+      <BasicCard />
+      <BasicCard />
+      <BasicCard />
+      <BasicCard />
+    </>
   )
 }
 
